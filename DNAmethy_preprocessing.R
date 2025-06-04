@@ -6,20 +6,10 @@ library(devtools)
 install_github("sailalithabollepalli/EpiSmokEr")
 
 library(IlluminaHumanMethylation450kmanifest)
+library(IlluminaHumanMethylation450kanno.ilmn12.hg19)
 library(minfi)
 library(htmlTable)
 library(rmarkdown)
-library(devtools)
-library(EpiSmokEr)
-library(readxl)
-library(cgwtools)
-library(writexl)
-
-library(minfi)
-library(limma)
-library(impute)
-library(preprocessCore)
-library(BiocParallel)
 
 ### tumor methylation
 tumorm_raw <- loadData(idatPath = "/omics/odcf/analysis/OE0167_projects/dachs_genetic_data_platform/Validation_cpgs/Data_methylation450")
